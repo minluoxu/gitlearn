@@ -14,3 +14,11 @@ git push -u origin master
 git push 命令详解：
 git push 主机名 <本地分支>:<远程分值>
 
+git branch 命名详解
+git branch -a 列出所有的branch
+git branch test 创建一个分支，但是并不能进入分支，进入分支需要另一个命令：
+git checkout test
+默认的分支是master，这个是主分支，也是初始的分支
+在test分支上做的更改，并不能影响其他的分支，如果想把更改提交到主分支，需要切换到master 分支上，然后合并使用。
+
+
