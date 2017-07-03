@@ -11,4 +11,6 @@ git commit -a -m "change the files"
 git remote add origin https://github.com/minluoxu/gitlearn.git
 git push -u origin master
 这样，本地的文件就上传到github上
+git push 命令详解：
+git push 主机名 <本地分支>:<远程分值>
 
