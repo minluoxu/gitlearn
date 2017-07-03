@@ -6,3 +6,9 @@ git add filename
 git commit -m"add the new file"
 git commit -a -m "change the files"
 
+在github上创建一个自己的repo，复制链接，类似：git remote add origin https://github.com/minluoxu/gitlearn.git
+把本地文件和远程的repo 进行关联
+git remote add origin https://github.com/minluoxu/gitlearn.git
+git push -u origin master
+这样，本地的文件就上传到github上
+
