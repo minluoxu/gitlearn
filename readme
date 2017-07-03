@@ -20,5 +20,21 @@ git branch test 创建一个分支，但是并不能进入分支，进入分支�
 git checkout test
 默认的分支是master，这个是主分支，也是初始的分支
 在test分支上做的更改，并不能影响其他的分支，如果想把更改提交到主分支，需要切换到master 分支上，然后合并使用。
+git checkout master
 
+git merge test
+git add 详解
 
+这里面有三个概念：
+工作区、暂存区、版本库
+工作区简单来说就是你的工作目录，也就是你写代码的目录
+暂存区，就是通过git add,是一个索引
+版本库，就是通过git commit 的工作区
+这里面有一个特殊的概念就是HEAD，实际上是master一个索引
+
+workspace --> stage: git add
+stage --> git  : git commit
+stage --> workspace : git checkout . 这个动作是把暂存区全部内容或者指定文件替换工作区的文件，这个操作会抹除掉暂存区的东西。
+git --> workspace & stage  git checkout HEAD ./<file>
+这个动作会把git版本库的内容替换stage 和workspace 的内容，会擦除更改。
+git rm --cached <file> 会直接删除暂存区的内容，工作区 不会改变。
