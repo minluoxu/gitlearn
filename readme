@@ -1,0 +1,7 @@
+
+this is file is readme for git
+git init
+git init newrepo
+git add filename
+git commit -m"add the new file"
+
