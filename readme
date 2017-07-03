@@ -4,4 +4,5 @@ git init
 git init newrepo
 git add filename
 git commit -m"add the new file"
+git commit -a -m "change the files"
 
